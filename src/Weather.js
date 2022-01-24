@@ -14,6 +14,7 @@ export default function Weather() {
             id="icon"
             src="https://openweathermap.org/img/wn/10d@2x.png"
             width="65"
+            alt=""
           />
           <h2>
             <span class="current-temp" id="temperature">
