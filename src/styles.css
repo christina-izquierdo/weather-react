@@ -1,0 +1,85 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  body {
+    display: block;
+    margin: 0 auto;
+    max-width: 650px;
+    text-align: center;
+    font-family: "Gowun Dodum", sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1597264238801-5a57ce584f22?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  #forecast {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  a:link {
+    color: lavenderblush;
+  }
+  a:hover {
+    color: rgb(130, 10, 190);
+  }
+  
+  h1 {
+    font-family: "Gowun Dodum", sans-serif;
+    color: white;
+  }
+  
+  .humidity-wind {
+    font-family: "Gowun Dodum", sans-serif;
+    flex: wrap;
+    font-size: 18px;
+    color: white;
+  }
+  h3 {
+    font-family: "Gowun Dodum", sans-serif;
+    color: white;
+  }
+  .forecast {
+    font-family: "Gowun Dodum", sans-serif;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .city-search {
+    display: block;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  .content-border {
+    box-shadow: 10px 10px 17px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin: 50px 30px 0px 30px;
+    background: hsl(280, 74%, 79%);
+  }
+  .current-info {
+    display: flex;
+    font-family: "Gowun Dodum", sans-serif;
+    flex: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+  .current-temp {
+    align-items: center;
+  }
+  .search-bar {
+    display: flex;
+  }
+  
+  .source-code-link {
+    color: lightblue;
+    font-size: small;
+    padding: 0px;
+  }
+  
+  
