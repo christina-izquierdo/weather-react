@@ -12,7 +12,7 @@ export default function Forecast(){
                     <p>22/17</p>
                     <ReactAnimatedWeather
         icon="CLEAR_DAY"
-        color="black"
+        color="#7fdfd4"
         size={48}
         animate={false}
       />
@@ -22,7 +22,7 @@ export default function Forecast(){
                     <p>22/17</p>
                     <ReactAnimatedWeather
         icon="CLEAR_DAY"
-        color="black"
+        color="#7fdfd4"
         size={48}
         animate={false}
       />
@@ -32,7 +32,7 @@ export default function Forecast(){
                     <p>22/17</p>
                     <ReactAnimatedWeather
         icon="CLEAR_DAY"
-        color="black"
+        color="#7fdfd4"
         size={48}
         animate={false}
       />
@@ -42,7 +42,7 @@ export default function Forecast(){
                     <p>22/17</p>
                     <ReactAnimatedWeather
         icon="CLEAR_DAY"
-        color="black"
+        color="#7fdfd4"
         size={48}
         animate={false}
       />
@@ -52,7 +52,7 @@ export default function Forecast(){
                     <p>22/17</p>
                     <ReactAnimatedWeather
         icon="CLEAR_DAY"
-        color="black"
+        color="#7fdfd4"
         size={48}
         animate={false}
       />

@@ -58,12 +58,7 @@
     background-color: #fbe1b6;
     border: 15px solid #7fdfd4;
   }
-  .content-border {
-    box-shadow: 10px 10px 17px rgba(0, 0, 0, 0.3);
-    
-    margin: 50px 30px 0px 30px;
-    background: hsl(280, 74%, 79%);
-  }
+
   .current-info {
     display: flex;
     font-family: "Gowun Dodum", sans-serif;
