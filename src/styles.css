@@ -8,10 +8,7 @@
     max-width: 650px;
     text-align: center;
     font-family: "Gowun Dodum", sans-serif;
-    background-image: url("https://images.unsplash.com/photo-1597264238801-5a57ce584f22?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #a7efe9;
     height: 100%;
     width: 100%;
   }
@@ -23,30 +20,30 @@
   }
   
   a:link {
-    color: lavenderblush;
+    color: #fbac91;
   }
   a:hover {
-    color: rgb(130, 10, 190);
+    color: #7fdfd4;
   }
   
   h1 {
     font-family: "Gowun Dodum", sans-serif;
-    color: white;
+    color:#fbac91;
   }
   
   .humidity-wind {
     font-family: "Gowun Dodum", sans-serif;
     flex: wrap;
     font-size: 18px;
-    color: white;
+    color: #fbac91;
   }
   h3 {
     font-family: "Gowun Dodum", sans-serif;
-    color: white;
+    color: #fbac91;
   }
   .forecast {
     font-family: "Gowun Dodum", sans-serif;
-    color: white;
+    color: #fbac91;
     text-align: center;
     justify-content: space-around;
   }
@@ -54,10 +51,12 @@
     display: block;
     margin-top: 20px;
     border-radius: 15px;
+    background-color: #fbe1b6;
+    border: 15px solid #7fdfd4;
   }
   .content-border {
     box-shadow: 10px 10px 17px rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
+    
     margin: 50px 30px 0px 30px;
     background: hsl(280, 74%, 79%);
   }
@@ -67,7 +66,7 @@
     flex: wrap;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: #fbac91;
   }
   .current-temp {
     align-items: center;
@@ -80,6 +79,12 @@
     color: lightblue;
     font-size: small;
     padding: 0px;
+  }
+  .current-city{
+    background-color: #fbe1b6;
+    border: 15px solid #7fdfd4;
+    border-radius: 15px;
+    margin: 15px 0px;
   }
   
   
