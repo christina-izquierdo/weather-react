@@ -20,8 +20,8 @@ export default function Weather() {
           <ReactAnimatedWeather
         icon="RAIN"
         color="#7fdfd4"
-        size={48}
-        animate={false}
+        size={160}
+        animate={true}
       />
           <h2>
             <span class="current-temp" id="temperature">
