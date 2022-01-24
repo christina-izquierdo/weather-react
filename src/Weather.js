@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import ReactAnimatedWeather from 'react-animated-weather';
 
 export default function Weather() {
   return (
@@ -12,10 +13,16 @@ export default function Weather() {
           <img
             class="current-img"
             id="icon"
-            src="https://openweathermap.org/img/wn/10d@2x.png"
+            src=""
             width="65"
             alt=""
           />
+          <ReactAnimatedWeather
+        icon="RAIN"
+        color="black"
+        size={48}
+        animate={false}
+      />
           <h2>
             <span class="current-temp" id="temperature">
               15°

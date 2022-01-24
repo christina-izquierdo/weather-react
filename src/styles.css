@@ -46,6 +46,10 @@
     color: #fbac91;
     text-align: center;
     justify-content: space-around;
+    background-color: #fbe1b6;
+    border: 15px solid #7fdfd4;
+    border-radius: 15px;
+    margin: 15px 0px;
   }
   .city-search {
     display: block;
