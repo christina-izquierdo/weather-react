@@ -19,7 +19,7 @@ export default function Weather() {
           />
           <ReactAnimatedWeather
         icon="RAIN"
-        color="black"
+        color="#7fdfd4"
         size={48}
         animate={false}
       />
