@@ -48,7 +48,7 @@ export default function Forecast(){
       />
       </div>
       <div className="col">
-                    <h4>Friday</h4>
+                    <h5>Friday</h5>
                     <p>22/17</p>
                     <ReactAnimatedWeather
         icon="CLEAR_DAY"

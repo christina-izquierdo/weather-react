@@ -1,6 +1,6 @@
 import React from "react";
+import "./styles.css";
 import FormattedDate from "./FormattedDate";
-import ReactAnimatedWeather from 'react-animated-weather';
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 
@@ -16,27 +16,16 @@ export default function WeatherInfo(props){
           <br />
           <div class="current-info">
             <WeatherIcon code={props.data.icon} />
-            <img
-              class="current-img"
-              id="icon"
-              src={props.data.icon}
-              width="65"
-            />
-            <WeatherTemperature celsius={props.data.temperature} />
-              <br />
               <h2>
+              <WeatherTemperature celsius={props.data.temperature} className=""/>
               <span class="current-weather-description text-capitalize" id="weather-description">
               <h3>{props.data.description}</h3>
-
               </span>
-              <br />
               <div class="humidity-wind">
-               
-                    Humidity:
+                Humidity:
                 <span class="current-humidity" id="humidity">
                   {" "}
-                  {props.data.humidity}{" "}
-                </span>{" "}
+                  {props.data.humidity} </span>{" "}
                 % <br />
                 Wind:
                 <span class="current-wind" id="wind">

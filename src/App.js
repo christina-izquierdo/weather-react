@@ -10,7 +10,7 @@ function App() {
      <div className="container">
       <Weather defaultCity="Dallas"/>
       <Forecast />
-      <footer>
+      <footer className="source-code-link">
         This project was coded by Christina Izquierdo and is open-sourced on <a href="https://github.com/christina-izquierdo"> Github</a>.
       </footer>
     </div>
