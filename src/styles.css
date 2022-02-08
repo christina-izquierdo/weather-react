@@ -41,6 +41,25 @@
     font-family: "Gowun Dodum", sans-serif;
     color: #fbac91;
   }
+  #search-form {
+    display: flex;
+    margin:8px;
+    color: teal;
+    
+  }
+  #button{
+    border:2px solid #fbac91;
+    background-color: #fbac91;
+    color: white;
+    border-radius: 4px;
+    margin: 8px;
+  }
+  #button:hover{
+    border:2px solid #fbac91;
+    background-color:#fbe1b6;
+    color:#fbac91;
+
+  }
   .forecast {
     font-family: "Gowun Dodum", sans-serif;
     color: #fbac91;
@@ -70,9 +89,7 @@
   .current-temp {
     align-items: center;
   }
-  .search-bar {
-    display: flex;
-  }
+  
   
   .source-code-link {
     color: lightblue;

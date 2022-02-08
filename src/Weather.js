@@ -1,64 +1,72 @@
-import React from "react";
+import React, {useState } from "react";
 import "./styles.css";
-import ReactAnimatedWeather from 'react-animated-weather';
+import axios from "axios";
+import WeatherInfo from "./WeatherInfo";
 
-export default function Weather() {
+
+export default function Weather(props) {
+  const [city, setCity]= useState(props.defaultCity);
+  const [weatherData, setWeatherData] = useState({ready:false});
+  function handleResponse(response){
+    setWeatherData({
+      ready:true,
+      temperature: response.data.main.temp,
+      date: new Date(response.data.dt * 1000),
+      description: response.data.weather[0].description,
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
+      city: response.data.name,
+
+    });
+  
+} 
+function search(){
+  const apiKey="a4014b11c8762becff1e993255c8c37e";
+  let apiUrl =`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
+}
+function handleSubmit(event){
+  event.preventDefault();
+  search();
+}
+function handleCityChange(event){
+  setCity(event.target.value);
+}
+if(weatherData.ready){
   return (
-    <div className="Weather">
-      <div className="current-city">
-        <h1>Melbourne</h1>
-        <h3 class="current-date">Thursday</h3>
-        <br />
-        <div class="current-info">
-          <img
-            class="current-img"
-            id="icon"
-            src=""
-            width="65"
-            alt=""
-          />
-          <ReactAnimatedWeather
-        icon="RAIN"
-        color="#7fdfd4"
-        size={160}
-        animate={true}
-      />
-          <h2>
-            <span class="current-temp" id="temperature">
-              15°
-            </span>
-            <span class="units">
-              <a href="#" id="celcius-link">
-                {" "}
-                °C{" "}
-              </a>
-              |
-              <a href="#" id="fahrenheit-link">
-                °F
-              </a>
-            </span>
-            <br />
-            <span class="current-weather-description" id="weather-description">
-              Cloudy
-            </span>
-            <br />
-            <div class="humidity-wind">
-              Humidity
-              <span class="current-humidity" id="humidity">
-                {" "}
-                50{" "}
-              </span>{" "}
-              % <br />
-              Wind:
-              <span class="current-wind" id="wind">
-                {" "}
-                6
-              </span>{" "}
-              km/h
+    <div>
+  
+
+        <div class="container-fluid city-search" >
+          <form onSubmit={handleSubmit}>
+            <div class="input-group mb-3">
+              <input
+                type="search"
+                class="form-control"
+                id="search-form"
+                placeholder="Search Location"
+                aria-label="Search"
+                aria-describedby="button-addon2"
+                onChange={handleCityChange}
+              ></input>
+              <button
+                class="btn btn-outline-secondary"
+                type="submit"
+                id="button"
+              >
+                Update City
+              </button>
             </div>
-          </h2>
+          </form>
+        
         </div>
-      </div>
+  
+    
+    <WeatherInfo data={weatherData}/>
     </div>
-  );
+  );  
+ } else {
+  search();
+  return "loading";
+  };
 }

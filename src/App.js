@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-import Search from "./Search";
 import Weather from "./Weather";
 import Forecast from "./Forecast"
 import './App.css';
@@ -8,10 +7,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     <div className="App">
-      <Search />
-      <Weather />
+     <div className="container">
+      <Weather defaultCity="Dallas"/>
       <Forecast />
+      <footer>
+        This project was coded by Christina Izquierdo and is open-sourced on 
+      </footer>
     </div>
     </div>
   );
