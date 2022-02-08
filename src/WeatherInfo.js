@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import ReactAnimatedWeather from 'react-animated-weather';
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props){
     return (
@@ -21,28 +22,17 @@ export default function WeatherInfo(props){
               src={props.data.icon}
               width="65"
             />
-            <h2>
-              <span class="current-temp" id="temperature">
-                {Math.round(props.data.temperature)}
-              </span>
-              <span class="units">
-                <a href="#" id="celcius-link">
-                  {" "}
-                  °C{" "}
-                </a>
-                |
-                <a href="#" id="fahrenheit-link">
-                  °F
-                </a>
-              </span>
+            <WeatherTemperature celsius={props.data.temperature} />
               <br />
+              <h2>
               <span class="current-weather-description text-capitalize" id="weather-description">
               <h3>{props.data.description}</h3>
 
               </span>
               <br />
               <div class="humidity-wind">
-                Humidity:
+               
+                    Humidity:
                 <span class="current-humidity" id="humidity">
                   {" "}
                   {props.data.humidity}{" "}
@@ -59,6 +49,6 @@ export default function WeatherInfo(props){
           </div>
         </div>
       </div>
-        </div>
-    )
+    </div>
+    );
 }

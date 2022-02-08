@@ -11,7 +11,7 @@ function App() {
       <Weather defaultCity="Dallas"/>
       <Forecast />
       <footer>
-        This project was coded by Christina Izquierdo and is open-sourced on 
+        This project was coded by Christina Izquierdo and is open-sourced on <a href="https://github.com/christina-izquierdo"> Github</a>.
       </footer>
     </div>
     </div>

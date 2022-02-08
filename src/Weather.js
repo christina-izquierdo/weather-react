@@ -35,9 +35,7 @@ function handleCityChange(event){
 if(weatherData.ready){
   return (
     <div>
-  
-
-        <div class="container-fluid city-search" >
+      <div class="container-fluid city-search" >
           <form onSubmit={handleSubmit}>
             <div class="input-group mb-3">
               <input
