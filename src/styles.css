@@ -94,7 +94,9 @@
   .current-temp {
     align-items: center;
   }
-  
+  #current-icon{
+    size: 100px;
+  }
   
   .source-code-link {
     color: darkslategray;
@@ -107,5 +109,6 @@
     border-radius: 15px;
     margin: 15px 0px;
   }
+  
   
   
